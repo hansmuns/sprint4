@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Boete</title>
+  </head>
+  <body>
+    <div style="text-align: center;">
+      <h1> Indien je hier voorbij flitst, flitsen wij terug </h1>
+      <h3><b>Geef je snelheid<br>
+          Geef de maximum toegelaten snelheid<br>
+          Bereken je boete</b></h3>
+      <button onclick="boete()">druk hier</button><br>
+      <img src="flits.jpg" alt="flits politie"></div>
+    <script>
+      function boete(){
+    var snelheid = prompt("Geef je snelheid in?");
+    var max = prompt("Geef de maximum toegelaten snelheid in?");
+  
+    if(snelheid >> max){
+    var teveel = snelheid - max;
+      var boete = 100 + 2.5 * teveel;
+      alert("De boete die je moet betalen is: " + boete + " euro");
+    }
+      else{
+        alert("Je hoeft geen boete te betalen.");
+           }
+    }                   
+    </script>
+  </body>
+</html>

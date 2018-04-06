@@ -1,0 +1,44 @@
+body, html {
+
+    background: rgb(231,226,249);
+    background: radial-gradient(circle, rgba(231,226,249,1) 15%, rgba(147,196,255,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.card {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 50px;
+}
+.footer{
+    background-color:#fff;
+}
+/*navbar*/
+#navbarcolor {
+    box-shadow: 0 0 2px 0 black;
+}
+.nav.navbar-nav.navbar-right {
+    padding-top: 5px;
+    margin-top: -1px;
+}
+.nav.navbar-nav.navbar-right li a {
+    color: #4d4d4d;
+}
+.nav.navbar-nav.navbar-right li a:hover {
+    border-bottom: 3px solid #2084bf;
+    border-width: 3px;
+}
+
+.navbar-brand {
+    height: 64px;
+    width: 64px;
+}
+#navbarcolor {
+    background-color: #fff;
+    border: 0;
+}
+.navbar-header .navbar-brand {
+    width: 120px;
+}

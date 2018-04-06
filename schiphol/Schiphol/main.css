@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border-width: 0px;
+}
+
+body, html {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+body {
+  
+  font-family: Verdana, sans-serif !important;
+  background-image: url("images/wallpaper.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}        
+.card-title {
+  text-align: center;
+}
+#infocard {
+  position: absolute;
+  top: 100px;
+  background-color: #fff;
+  color: #000;
+  -webkit-box-shadow: 10px 0 5px -2px #323232;
+  box-shadow: 10px 0 5px -2px #323232;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  -webkit-box-shadow: 3px 3px 5px 4px #4d4d4d;
+  -moz-box-shadow:    3px 3px 5px 4px #4d4d4d;
+  box-shadow:         3px 3px 5px 4px #4d4d4d;
+}
+
+#text-muted {
+  color: #fff!important;
+  text-align: center;
+}
+#navbarcolor {
+    box-shadow: 0 0 4px 0 #000;
+}
+.nav.navbar-nav.navbar-right {
+  padding-top: 5px;
+  margin-top: -1px;
+}
+.nav.navbar-nav.navbar-right li a {
+  color: #4d4d4d;
+}
+.nav.navbar-nav.navbar-right li a:hover {
+  border-bottom: 3px solid #2084bf;
+  border-width: 3px;
+}
+
+.navbar-brand {
+  height: 64px;
+  width: 64px;
+}
+#navbarcolor {
+  background-color: #fff;
+  border: 0;
+}
+.navbar-header .navbar-brand {
+  width: 120px;
+}
+
+.text-muted {
+  color: black;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* voor kleinere beeldschermen*/
+@media (max-width: 500px) { 
+
+   .footer {
+    margin-top: 20px;
+}
+
