@@ -35,7 +35,7 @@
 <div class="container">
     <?php
     echo "<table class='table' style='border: solid 1px black;'>";
-    echo "<tr><th>Titel Klacht</th><th>Omschrijving</th></tr>";
+    echo "<tr><th>Titel Klacht</th><th>Omschrijving</th><th>Postcode</th></tr>";
 
     //functies om de tabel te maken
     class TableRows extends RecursiveIteratorIterator {
@@ -65,7 +65,7 @@
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $stmt = $conn->prepare("SELECT Titel, Omschrijving FROM omwonende_klachten WHERE typen = 'toeristen'");
+        $stmt = $conn->prepare("SELECT Titel, Omschrijving, postcode FROM omwonende_klachten WHERE typen = 'toeristen' ORDER BY postcode");
         $stmt->execute();
 
         $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);

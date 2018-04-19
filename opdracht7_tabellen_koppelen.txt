@@ -1,0 +1,5 @@
+SELECT concat(klantgegevens.Voornaam, klantgegevens.Tussenvoegsel, klantgegevens.Achternaam),contactmomenten.datum,contactmomenten.tijd, contactmomenten.beschrijving, communicatietypes.name
+FROM contactmomenten
+INNER JOIN communicatietypes ON contactmomenten.com_type=communicatietypes.communication_type_id
+INNER JOIN klantgegevens ON contactmomenten.klant=klantgegevens.Klantnummer;
+

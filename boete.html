@@ -16,14 +16,21 @@
       function boete(){
     var snelheid = prompt("Geef je snelheid in?");
     var max = prompt("Geef de maximum toegelaten snelheid in?");
-  
-    if(snelheid >> max){
-    var teveel = snelheid - max;
-      var boete = 100 + 2.5 * teveel;
-      alert("De boete die je moet betalen is: " + boete + " euro");
+        
+    while(snelheid.length < max.length){
+    var snelheid = 0 + snelheid;
+    }      
+     while(snelheid.length > max.length){
+    var max = 0 + max;
+    }      
+   /*controle of snelheid te hoog is*/
+    if (max >= snelheid){
+     alert("Je hoeft geen boete te betalen.");
     }
       else{
-        alert("Je hoeft geen boete te betalen.");
+      var teveel = snelheid - max;
+      var boete = 100 + 2.5 * teveel;
+      alert("De boete die je moet betalen is: " + boete + " euro");
            }
     }                   
     </script>
